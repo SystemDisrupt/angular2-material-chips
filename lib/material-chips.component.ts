@@ -28,7 +28,7 @@ export const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR: any = {
   template: `
     <div *ngIf="values && values.length" class="md-chip-list" [ngClass]="focused">
         <span *ngFor="let value of values" class="md-chip">         
-        {{value}} <i class="md-icon" (click)="removeValue(value)" >clear</i>
+        {{value}} <i class="md-icon" (click)="removeValue(value)" ></i>
         </span>
 
         <span style="display:inline-block;">
@@ -40,7 +40,7 @@ export const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR: any = {
         </span>
     </div>
     <div *ngIf="!values || !values.length">
-        <input class="md-chips-input" placeholder="Tags" #tbox style="width:100%" (keyup.enter)="addValue(tbox.value, $event);$event.preventDefault()"
+        <input class="md-chips-input"  #tbox style="width:100%" (keyup.enter)="addValue(tbox.value, $event);$event.preventDefault()"
         />
     </div>
   `,

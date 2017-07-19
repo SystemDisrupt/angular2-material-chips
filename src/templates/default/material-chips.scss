@@ -5,7 +5,7 @@
 }
 .md-chip-list {
     input {
-        border:none; 
+        border:none;
         outline:0;
         background:transparent;
     }
@@ -28,10 +28,10 @@
 .md-chip-list {
 
   padding-bottom:5px;
-  box-shadow: 0 1px rgba(0,0,0,0.12);  
+  box-shadow: 0 1px rgba(0,0,0,0.12);
 }
 .md-chip-list.md-focused{
-    box-shadow: 0 2px rgba(16, 108, 200,1); 
+    box-shadow: 0 2px rgba(16, 108, 200,1);
 }
 .md-chip {
   display: inline-block;
@@ -40,7 +40,7 @@
   font-size: 13px;
   line-height: 16px;
    i.md-icon{
-     font-family: 'Material Icons'; 
+     font-family: 'Material Icons';
      font-weight: normal;
      font-style: normal;
      line-height: 1;
@@ -49,19 +49,19 @@
      display: inline-block;
      cursor:pointer;
      border-radius: 15px;
-     &:hover{        
+     &:hover{
          background:gray;
      }
    }
 
 }
 .md-chips-input{
-    border:0;   
-    box-shadow: 0 1px rgba(0,0,0,0.12);  
+    border:0;
+    box-shadow: 0 1px rgba(0,0,0,0.12);
     outline:0;
     background:transparent;
 }
 .md-chips-input:focus{
-    box-shadow: 0 2px rgba(16, 108, 200,1); 
-    
+    box-shadow: 0 2px rgba(16, 108, 200,1);
+
 }

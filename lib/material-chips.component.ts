@@ -27,21 +27,22 @@ export const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR: any = {
   selector: 'material-chips',
   template: `
     <div *ngIf="values && values.length" class="md-chip-list" [ngClass]="focused">
-        <span *ngFor="let value of values" class="md-chip">         
+        <span *ngFor="let value of values" class="md-chip">
         {{value}} <i class="md-icon" (click)="removeValue(value)" ></i>
         </span>
 
         <span style="display:inline-block;">
-        <input [(ngModel)]="labelToAdd" 
+        <input [(ngModel)]="labelToAdd"
         (keyup.enter)="addValue(box.value, $event);$event.preventDefault()"
-        (focus)="onFocus()" 
-        (focusout)="focusOutFunction()"  
+        (focus)="onFocus()"
+        (focusout)="focusOutFunction()"
         #box />
         </span>
     </div>
     <div *ngIf="!values || !values.length">
-        <input class="md-chips-input"  #tbox style="width:100%" (keyup.enter)="addValue(tbox.value, $event);$event.preventDefault()"
-        />
+      <input class="md-chips-input"  #tbox style="width:100%" (keyup.enter)="addValue(tbox.value, $event);$event.preventDefault()" placeholder = "Enter a keyword..."
+      />
+      <button type = "button" class = "add keywords" (click)="addValue(tbox.value, $event);"></button>
     </div>
   `,
   providers: [CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR],

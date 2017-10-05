@@ -38,6 +38,7 @@ export const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR: any = {
         (focusout)="focusOutFunction()"
         #box />
         </span>
+        <button type = "button" class = "add keywords" (click)="addValue(box.value, $event);"></button>
     </div>
     <div *ngIf="!values || !values.length">
       <input class="md-chips-input"  #tbox style="width:100%" (keyup.enter)="addValue(tbox.value, $event);$event.preventDefault()" placeholder = "Enter a keyword..."

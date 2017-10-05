@@ -31,13 +31,11 @@ export const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR: any = {
         {{value}} <i class="md-icon" (click)="removeValue(value)" ></i>
         </span>
 
-        <span style="display:inline-block;">
         <input [(ngModel)]="labelToAdd"
         (keyup.enter)="addValue(box.value, $event);$event.preventDefault()"
         (focus)="onFocus()"
         (focusout)="focusOutFunction()"
         #box />
-        </span>
         <button type = "button" class = "add keywords" (click)="addValue(box.value, $event);"></button>
     </div>
     <div *ngIf="!values || !values.length">
